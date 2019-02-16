@@ -110,14 +110,12 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
-		color: #ff7065;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ff7065 !important;
+			color: #cc3333 !important;
 		}
 
 		a.icon:before {
@@ -128,11 +126,11 @@ input, select, textarea {
 		}
 
 		a.icon:hover:before {
-			color: #ff7065 !important;
+			color: #cc3333 !important;
 		}
 
 	strong, b {
-		color: #626c6e;
+		color: #333366;
 		font-weight: bold;
 	}
 
@@ -145,7 +143,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #626c6e;
+		color: #333366;
 		font-weight: bold;
 		letter-spacing: -0.05em;
 		line-height: 1em;
@@ -1440,7 +1438,6 @@ input, select, textarea {
 
 				.row.gtr-150 {
 					margin-top: 0;
-					margin-left: -3em;
 				}
 
 					.row.gtr-150 > * {
@@ -1685,7 +1682,6 @@ input, select, textarea {
 
 				.row.gtr-150 {
 					margin-top: 0;
-					margin-left: -3em;
 				}
 
 					.row.gtr-150 > * {
@@ -1712,11 +1708,9 @@ input, select, textarea {
 					.row.gtr-200.gtr-uniform {
 						margin-top: -4em;
 					}
-
 						.row.gtr-200.gtr-uniform > * {
 							padding-top: 4em;
 						}
-
 		}
 
 /* Container */
@@ -1849,8 +1843,8 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #ff7065;
-			box-shadow: 0 0 0 1px #ff7065;
+			border-color: #cc3333;
+			box-shadow: 0 0 0 1px #cc3333;
 		}
 
 	select {
@@ -1950,8 +1944,8 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #ff7065;
-			box-shadow: 0 0 0 1px #ff7065;
+			border-color: #cc3333;
+			box-shadow: 0 0 0 1px #cc3333;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2077,8 +2071,9 @@ input, select, textarea {
 		}
 
 		.image .caption {
-			background: #232626;
-			background: rgba(35, 38, 38, 0.7);
+			background: #333366;
+			background: #333366;
+			opacity: 0.8;
 			border-radius: 0 0 6px 6px;
 			bottom: 0;
 			color: #fff;
@@ -2509,16 +2504,16 @@ input, select, textarea {
 		input[type="reset"]:active,
 		input[type="button"]:hover,
 		input[type="button"]:active,
-		.button:hover,
-		.button:active {
-			box-shadow: inset 0 0 0 1px #ff7065;
-			color: #ff7065 !important;
+		.button1:hover,
+		.button1:active {
+			box-shadow: inset 0 0 0 1px #cc3333;
+			color: #cc3333 !important;
 		}
 
 		input[type="submit"]:active,
 		input[type="reset"]:active,
 		input[type="button"]:active,
-		.button:active {
+		.button1:active {
 			background-color: rgba(255, 112, 101, 0.15);
 		}
 
@@ -2558,7 +2553,7 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #ff7065 !important;
+			background-color: #cc0033 !important;
 			box-shadow: none !important;
 			color: #ffffff !important;
 		}
@@ -2574,14 +2569,14 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #ff7b71 !important;
+				background-color: #cc3333 !important;
 			}
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #ff584b !important;
+				background-color: #cc6666 !important;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2617,7 +2612,7 @@ input, select, textarea {
 	#header {
 		background: #fff;
 		border-bottom: solid 1px #e2eaec;
-		height: 3.5em;
+		height: 4em;
 		left: 0;
 		line-height: 3.5em;
 		position: fixed;
@@ -2631,14 +2626,16 @@ input, select, textarea {
 			left: 1em;
 			line-height: inherit;
 			position: absolute;
-			top: 0;
+			top: 5px;
+			letter-spacing: 1px;
 		}
 
 			#header h1 a {
 				text-decoration: none;
 				border: 0;
-				font-size: 1.25em;
+				font-size: 1em;
 			}
+			
 
 				#header h1 a:before {
 					-moz-osx-font-smoothing: grayscale;
@@ -2651,19 +2648,20 @@ input, select, textarea {
 
 				#header h1 a:before {
 					color: #fff !important;
-					text-shadow: 1px 0 0 #ff7065, -1px 0 0 #ff7065, 0 1px 0 #ff7065, 0 -1px 0 #ff7065;
+					text-shadow: 1px 0 0 #cc0033, -1px 0 0 #cc0033, 0 1px 0 #cc0033, 0 -1px 0 #cc0033;
 				}
 
 				#header h1 a:before {
-					color: #ff7065;
-					content: '\f0c2';
+					color: #cc0033;
+					content: none;
 					margin-right: 0.6em;
+					/*content: '\f0c2'; */
 				}
 
 		#header nav {
 			position: absolute;
 			right: 0;
-			top: 0;
+			top: 5px;
 		}
 
 			#header nav:after {
@@ -2685,7 +2683,7 @@ input, select, textarea {
 
 					#header nav ul li > a, #header nav ul li > span {
 						border: 0;
-						color: #626c6e;
+						color: #333366;
 						display: block;
 						font-weight: bold;
 						padding: 0 1em;
@@ -2707,6 +2705,8 @@ input, select, textarea {
 					#header nav ul li:not(.special) + .special {
 						margin-left: 0.75em;
 					}
+
+					
 
 /* Banner */
 
@@ -2947,7 +2947,7 @@ input, select, textarea {
 	}
 
 		#footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer b {
-			color: #626c6e;
+			color: #333366;
 		}
 
 		#footer a {
@@ -2970,7 +2970,7 @@ input, select, textarea {
 			#footer input[type="button"]:active,
 			#footer .button:hover,
 			#footer .button:active {
-				color: #ff7065 !important;
+				color: #cc3333 !important;
 				box-shadow: inset 0 0 0 1px #ff7065;
 			}
 
@@ -3085,7 +3085,7 @@ input, select, textarea {
 			}
 
 			#menu .closer:hover:before {
-				color: #ff7065;
+				color: #cc0033;
 			}
 
 		#menu h2 {
@@ -3231,7 +3231,7 @@ input, select, textarea {
 			}
 
 			#header {
-				height: 3em;
+				height: 3.5em;
 				line-height: 3em;
 			}
 
@@ -3381,12 +3381,11 @@ input, select, textarea {
 			}
 
 			#header {
-				height: 2.75em;
 				line-height: 2.75em;
 			}
 
 				#header h1 {
-					left: 0.75em;
+					margin: auto;
 				}
 
 					#header h1 a {
@@ -3638,3 +3637,126 @@ input, select, textarea {
 			}
 
 	}
+/* Suz CSS */
+
+/*ugly phone number color*/
+
+
+
+a[href^="tel:"] {
+	color:#cc3333;
+	text-decoration: none;
+	letter-spacing: 1px;
+	-moz-transition:  opacity  0.4s ease-in-out;
+	-webkit-transition:  opacity  0.4s ease-in-out;
+	-ms-transition:  opacity  0.4s ease-in-out;
+	transition:  opacity  0.4s ease-in-out;
+	width: 150px!important;
+	text-align: center;
+  }
+
+  a:hover[href^="tel:"] {
+	color:#cc3333;
+	text-decoration: none;
+	opacity: 0.6;
+  }
+
+  a[href^="mailto:"] {
+	color:#cc3333;
+	text-decoration: none;
+	letter-spacing: 1px;
+	-moz-transition:  opacity  0.6s ease-in-out;
+	-webkit-transition:  opacity  0.6s ease-in-out;
+	-ms-transition:  opacity  0.6s ease-in-out;
+	transition:  opacity  0.6s ease-in-out;
+  }
+
+  a:hover[href^="mailto:"] {
+	color:#cc3333;
+	text-decoration: none;
+	opacity: 0.8;
+  }
+
+.button-wrapper {
+	width: 350px;
+	letter-spacing: 2px!important;
+	-moz-transition: letter-spacing 0.5s ease-in-out!important;
+	-webkit-transition: letter-spacing 0.5s ease-in-out!important;
+	-ms-transition: letter-spacing 0.5s ease-in-out!important;
+	-transition: letter-spacing 0.5s ease-in-out!important;
+}
+
+.button-wrapper:hover  {
+	letter-spacing: 3.5px!important;
+}
+
+.button-wrapper2 {
+	width: 450px;
+	letter-spacing: 2px!important;
+	-moz-transition: letter-spacing 0.5s ease-in-out!important;
+	-webkit-transition: letter-spacing 0.5s ease-in-out!important;
+	-ms-transition: letter-spacing 0.5s ease-in-out!important;
+	-transition: letter-spacing 0.5s ease-in-out!important;
+}
+
+.button-wrapper2:hover  {
+	letter-spacing: 3.5px!important;
+}
+
+@media screen and (max-width: 826px) {
+
+		.contactWrapper {
+			flex-direction: column;
+			justify-content: flex-start;
+
+	}
+}	
+
+.contacty {
+		-moz-transition: letter-spacing 0.5s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		-webkit-transition: letter-spacing 0.5s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		-ms-transition: letter-spacing 0.5s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		transition: letter-spacing 0.5s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		text-align: center;
+
+}
+.contacty:hover {
+	color:#666699!important;
+	letter-spacing: .25px;
+}
+
+a > .baby-icon{
+	-moz-transition: opacity 0.5s ease-in-out, box-shadow  0.5s ease-in-out;
+	-webkit-transition: box-shadow 0.5s ease-in-out, opacity 0.5s ease-in-out;
+	-ms-transition: box-shadow 0.5s ease-in-out, opacity 0.5s ease-in-out;
+	transition: box-shadow 0.5s ease-in-out, opacity 0.5s ease-in-out;
+	top: 8px;
+    position: relative;
+    height: 30px;
+}
+
+a > .baby-icon:hover {
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+	opacity: 0.6;
+}
+
+
+/* Contact form */
+
+.my-inline {
+		-moz-transition:  opacity 0.4s ease-in-out;
+		-webkit-transition:  opacity 0.4s ease-in-out;
+		-ms-transition:  opacity 0.4s ease-in-out;
+		transition:  opacity 0.4s ease-in-out;
+}
+
+.my-inline:hover {
+	opacity: 0.6;
+}
+
+/* Suz HTML */
+.home-button {
+	padding-top: 18px;
+}
+
+
