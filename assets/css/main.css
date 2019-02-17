@@ -2059,14 +2059,14 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 6px;
+		border-radius: 10px;
 		border: 0;
 		display: inline-block;
 		position: relative;
 	}
 
 		.image img {
-			border-radius: 6px;
+			border-radius: 10px;
 			display: block;
 		}
 
@@ -3779,12 +3779,12 @@ a > .baby-icon:hover {
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+	margin: auto;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+	display: none;
 }
 
 /* Next & previous buttons */
@@ -3822,7 +3822,9 @@ a > .baby-icon:hover {
   position: absolute;
   bottom: 8px;
   width: 100%;
-  text-align: center;
+	text-align: center;
+	font-variant: small-caps;
+	letter-spacing: 2px;
 }
 
 /* Number text (1/3 etc) */
