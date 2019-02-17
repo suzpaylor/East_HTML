@@ -27,7 +27,7 @@
 							<div id="menu">
 								<ul>
 									<li><a href="index.html">HOME</a></li>
-									<li><a href="index.html#give-food">HOURS</a></li>
+									<li><a href="index.html#hours">HOURS</a></li>
 									<li><a href="index.html#give-money">DONATE</a></li>
 									<li><a href="index.html#give-time">VOLUNTEER</a></li>
 									<li>
@@ -67,7 +67,7 @@
 								<a href="#two" class="button-wrapper button large primary">Learn More</a></li>
 							</div>	-->
 		</ul>
-		<p style="font-size: 2em; font-weight:bold; letter-spacing: 2px;"><a href="">STUDENT & FAMILY SUPPORT</a></p>
+		<p style="font-size: 2em; font-weight:bold; letter-spacing: 2px;"><a href="#hours">STUDENT & FAMILY SUPPORT</a></p>
 	</div>
 	<a href="#learn-more" class="more">Learn more ...</a>
 </section>
@@ -93,11 +93,66 @@
 		</p>
 	</section>
 
-
+	<!-- Two 
 	<img src="images/pic09.jpg" style="width: 100%;">
+-->
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+		<!-- Full-width images with number and caption text -->
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 6</div>
+		  <img src="images/pic09.jpg" style="width:100%">
+		  <div class="text">Ribbon Cutting Ceremony - Smith's Leopard Stash</div>
+		</div>
+	  
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 6</div>
+		  <img src="images/pic59.jpg" style="width:100%">
+		  <div class="text">Flags show the diversity of the EHS student body</div>
+		</div>
+	  
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 6</div>
+		  <img src="images/pic56.jpg" style="width:100%">
+		  <div class="text">Smith's EHS Leopard Stash</div>
+		</div>
+
+		<div class="mySlides fade">
+				<div class="numbertext">4 / 6</div>
+				<img src="images/pic61.jpg" style="width:100%">
+				<div class="text">Thank you Smith's for your support!</div>
+		</div>
 
 
-	<!-- Two -->
+		<div class="mySlides fade">
+				<div class="numbertext">5 / 6</div>
+				<img src="images/pic57.jpg" style="width:100%">
+				<div class="text">Final Details for Leopard Washroom Art</div>
+		</div>
+
+		
+		<div class="mySlides fade">
+				<div class="numbertext">6 / 6</div>
+				<img src="images/pic60.jpg" style="width:100%">
+				<div class="text">Completion of the Leopard Washroom</div>
+		</div>
+	  
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	  </div>
+	  <br>
+	  
+	  <!-- The dots/circles -->
+	  <div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+		<span class="dot" onclick="currentSlide(5)"></span> 
+		<span class="dot" onclick="currentSlide(6)"></span>   
+	  </div>
 
 	<!--Donate Money Section-->
 	<div id="give-money"></div>
@@ -162,7 +217,7 @@
 	</section>
 
 
-
+	<div id="hours"></div>
 	<hr />
 	<!--HOURS-->
 	<h2 class="major" style="text-align: center;">HOURS</h2>
@@ -615,6 +670,36 @@
 			} // End if
 		});
 	});
+</script>
+<script>
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
 </script>
 
 </body>
