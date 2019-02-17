@@ -18,10 +18,10 @@
 		<header id="header">
 				<a href="index.html" class="e-button"><img src='images/pic24.png' style="width: 20px;"></a>
 			<ul>
-				<li style="list-style: none;"></li><h1 style="white-space: pre; margin-left: 10px;">    <a href="fooddonation.html"><span class= "hide-me-mobile"> GIVE FOOD </a></span><span class="hide-me-mobile">|</span><a href="donate.html"> GIVE MONEY </a>|<a href="volunteer.html"> GIVE TIME</a> </h1></li>
+				<li style="list-style: none;"></li><h1 style="white-space: pre; margin-left: 10px;">    <a href="#give-food"><span class= "hide-me-mobile"> GIVE FOOD </a></span><span class="hide-me-mobile">|</span><a href="#give-money"> GIVE MONEY </a>|<a href="#give-time"> GIVE TIME</a> </h1></li>
 				<nav id="nav">
 					<ul>
-						<li><a href="#">CONTACT</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
 						<li><a href="#">LOGIN</a></li>
 						<li class="special">
 							<a href="#menu" class="icon fa-bars">MENU</a>
@@ -56,11 +56,10 @@
 
 		<!-- Main -->
 		<div id="main" class="container">
+		<!--Donate Money Section-->	
+		<div id="give-money"></div>
                 <section>			
                     <div  style = "text-align: left; font-size: 24px;">
-                        <a href="https://give.saltlakeeducationfoundation.org/easthighalumni/give-a-gift">
-                            <span class="image left my-inline"><img src="images/pic05.jpg" alt="" /></span>
-                        </a>
                         <a href="https://give.saltlakeeducationfoundation.org/easthighalumni/give-a-gift">
                             <h2 class="my-inline" style="text-align: left;">Click Here to Donate through <br/>Salt Lake Education Foundation ❤️</h2>
                         </a>
@@ -72,17 +71,105 @@
                         in the Designation tag.  When students have their basic needs met, they are capable and empowered to succeed in school and in life! Donations are tax deductible and you will receive a receipt directly from SLEF.  Thank you for your generosity.
                     </div>
                     <hr/>
-                </section>
+				</section>
+				
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-6 col-12-small">
                         <span class="image fit">
                             <img src="images/pic39.jpg" alt="" />
                         </span> 
-                    </div>
+					</div>
+					<div class="col-6 col-12-small">
+						<header id="give-food"class="major" style='text-align: center;'>
+							<h2>Community Drop off: <br>Wednesdays 2:45-3:15pm<br> <span style='color:#cc0033'> East High School</span></h2>
+							<p>840 S. 1300 E. SLC UT, 84102 
+							<br> Look for the students with the red cart!<br>
+							Thank you for your generosity ❤️<br>
+							*Only during the school-year*
+							</p>
+						</header>
+					</div>
                 </div>
 
-            </div>
-        </div>    
+ 
+		
+
+		<hr/>
+
+			<div class="row">
+				<div class="col-4-xlarge col-12-small">
+					<span class="image fit">
+						<img src='images/pic32.jpg' alt="" />
+						<span style='text-align:center;'>
+						<h3 >
+							Donations Needed
+						</h3>
+						</span>
+						<ul>
+							<li>New & gently used items sizes S-XXXL</li>
+							<li>Men's plaid button-down</li>
+							<li>Flannel tops</li>
+							<li>Men's & Women's socks</li>
+							<li>Men's Underwear all sizes</li>
+							<li>Plain White T-shirts all sizes</li>
+							<li>Women's underwear and bras all sizes</li>
+							<li>Fleece or lightweight jackets</li>
+							<li>Jeans, leggings and shorts</li>
+							<li>Sneakers and flip-flops</li>
+							<li>Hoodies</li>
+							<li>Walmart, Target, Old Navy Gift Cards in any amount</li>
+							<li>Formal dresses, used & new</li>
+						</ul>           
+					</span>
+				</div>
+				<div class="col-4-xlarge col-12-small">
+				<span class="image fit">
+						<img src="images/pic31.jpg" alt="" />
+						<span style="text-align: center;">
+						<h3 >
+							Donations Needed
+						</h3>
+						</span>
+						<ul>
+							<li>5lb bags of flour</li>
+							<li>3lb bags of sugar</li>
+							<li>3lb of masa</li>
+							<li>Canned fruit</li>
+							<li>Cooking oil</li>
+							<li>Jars of peanut butter</li>
+							<li>Canned chicken, tuna & spam</li>
+							<li>Bags of beans and rice</li>
+							<li>Pasta sauce</li>
+							<li>Ziploc bags</li>
+							<li>Plastic utensils</li>
+							<li>Walmart, Target, Old Navy Gift Cards in any amount</li>
+						</ul>           
+					</span>
+				</div>              
+				<div class="col-4-xlarge col-12-small">
+				<span class="image fit">
+						<img src="images/pic33.jpg" />
+						<span style="text-align:center;">
+						<h3 >
+							Donations Needed
+						</h3>
+						</span>
+						<ul>
+							<li>Towels</li>
+							<li>Thank you donors!</li>
+							<li>Check back for updates</li>
+						</ul>          
+					</span>
+					<div id="give-time">VOL</div>
+				</div>
+		</div>
+
+<!--Volunteer page here-->
+vol
+<!--Final Div-->
+	</div> 
+<hr>
+
 		<!-- Footer -->
 		<!-- Footer -->
 		<footer id="footer">
@@ -236,6 +323,33 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script>
+			$(document).ready(function(){
+			// Add smooth scrolling to all links
+			$("a").on('click', function(event) {
+
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+				// Prevent default anchor click behavior
+				event.preventDefault();
+
+				// Store hash
+				var hash = this.hash;
+
+				// Using jQuery's animate() method to add smooth page scroll
+				// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 800, function(){
+
+					// Add hash (#) to URL when done scrolling (default click behavior)
+					window.location.hash = hash;
+				});
+				} // End if
+			});
+			});
+			</script>
 
 	</body>
 </html>
