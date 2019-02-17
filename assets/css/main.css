@@ -3691,7 +3691,7 @@ a[href^="tel:"] {
 }
 
 .button-wrapper2 {
-	width: 400px;
+	width: 300px;
 	letter-spacing: 2px!important;
 	-moz-transition: letter-spacing 0.5s ease-in-out!important;
 	-webkit-transition: letter-spacing 0.5s ease-in-out!important;
@@ -3769,7 +3769,7 @@ a > .baby-icon:hover {
 
 
 
-@media only screen and (max-width: 455px) {
+@media only screen and (max-width: 593px) {
   .hide-me-mobile {
     display: none;
   }
@@ -3868,4 +3868,20 @@ a > .baby-icon:hover {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+/* Collapsible */
+
+.my-content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+	background-color: #f1f1f1;
+	border-radius: 10px;
+}
+
+.major-text {
+	font-size: 1.25em;
+	line-height: 1.75em;
 }
