@@ -3691,7 +3691,7 @@ a[href^="tel:"] {
 }
 
 .button-wrapper2 {
-	width: 350px;
+	width: 400px;
 	letter-spacing: 2px!important;
 	-moz-transition: letter-spacing 0.5s ease-in-out!important;
 	-webkit-transition: letter-spacing 0.5s ease-in-out!important;
