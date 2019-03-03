@@ -88,29 +88,35 @@ $('#please_show2').mouseover(function(){
 });
 
 
-// //working on weather API
-// $.ajax({
-// 	url: queryURL,
-// 	method: "GET"
-// })
-// 	// We store all of the retrieved data inside of an object called "response"
-// 	.then(function(response) {
+//working on weather API
+//var APIKey = config.KEY;
+var APIKey = '3652279a5eab355d1ee816c495eefba2';
+    // Here we are building the URL we need to query the database
+    var queryURL = "api.openweathermap.org/data/2.5/weather?lat=40.751580&lon=-111.856550" + APIKey;
 
-// 		// Log the queryURL
-// 		console.log(queryURL);
+    // Here we run our AJAX call to the OpenWeatherMap API
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    })
+      // We store all of the retrieved data inside of an object called "response"
+      .then(function(response) {
 
-// 		// Log the resulting object
-// 		console.log(response);
+        // Log the queryURL
+        console.log(queryURL);
 
-// 		// Transfer content to HTML
-// 		$(".city").html("<h1>" + response.name + " Weather Details</h1>");
-// 		$(".wind").text("Wind Speed: " + response.wind.speed);
-// 		$(".humidity").text("Humidity: " + response.main.humidity);
-// 		$(".temp").text("Temperature (F) " + response.main.temp);
+        // Log the resulting object
+        console.log(response);
 
-// 		// Log the data in the console as well
-// 		console.log("Wind Speed: " + response.wind.speed);
-// 		console.log("Humidity: " + response.main.humidity);
-// 		console.log("Temperature (F): " + response.main.temp);
-// 	});
+        // Transfer content to HTML
+       // $(".city").html("<h1>" + response.name + " Weather Details</h1>");
+        //$(".wind").text("Wind Speed: " + response.wind.speed);
+        //$(".humidity").text("Humidity: " + response.main.humidity);
+        //$(".temp").text("Temperature (F) " + response.main.temp);
+
+        // Log the data in the console as well
+        console.log("Wind Speed: " + response.wind.speed);
+        console.log("Humidity: " + response.main.humidity);
+        console.log("Temperature (F): " + response.main.temp);
+      });
 
