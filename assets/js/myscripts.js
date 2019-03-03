@@ -87,9 +87,10 @@ $('#please_show2').mouseover(function(){
 	.fadeOut();
 });
 
-var hats = '1234';
+var test1 = '1234';
 //working on weather API
 //var APIKey = config.KEY;
+//but this isn't working
 var APIKey = '3652279a5eab355d1ee816c495eefba2';
     // Here we are building the URL we need to query the database
     var queryURL = 'http://api.openweathermap.org/data/2.5/weather?APPID=3652279a5eab355d1ee816c495eefba2&zip=84102,us&units=imperial';
@@ -112,11 +113,13 @@ var APIKey = '3652279a5eab355d1ee816c495eefba2';
        // $(".city").html("<h1>" + response.name + " Weather Details</h1>");
         //$(".wind").text("Wind Speed: " + response.wind.speed);
         //$(".humidity").text("Humidity: " + response.main.humidity);
-        $("#currentWeather").text("Current Weather " + Math.round(response.main.temp) + "F");
-
+        $("#currentWeather").text(Math.round(response.main.temp) + "F");
+		var src1 = 'http://openweathermap.org/img/w/' + response.weather[0].icon + '.png';
+		$('#little-icon').attr('src', src1);
         // Log the data in the console as well
         console.log("Wind Speed: " + response.wind.speed);
         console.log("Humidity: " + response.main.humidity);
         console.log("Temperature (F): " + response.main.temp);
       });
 
+//<img src='http://openweathermap.org/img/w/" + weatherArray[i].weather[0].icon + ".png'>	  

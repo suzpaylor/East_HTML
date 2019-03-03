@@ -1,4 +1,4 @@
-var hat = "1234";
+var test = "1234";
 
 
 var config = {

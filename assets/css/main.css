@@ -3885,3 +3885,18 @@ a > .baby-icon:hover {
 	font-size: 1.25em;
 	line-height: 1.75em;
 }
+
+/* Weather wrappers */
+
+.weather-wrapper {
+display: flex;
+justify-content: center;
+}
+
+.temp-wrapper {
+	font-size: 1.5em;
+	color: red!important;
+}
+.icon-weather-wrapper {
+
+}
