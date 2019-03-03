@@ -73,3 +73,18 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+//these lines of jQuery add a line encouraging volunteering on mouseover
+$('#please_show').mouseover(function(){
+	$('#please_volunteer').fadeIn()
+	.delay(2000)
+	.fadeOut();
+});
+
+//these lines of jQuery add a line encouraging volunteering on mouseover
+$('#please_show2').mouseover(function(){
+	$('#please_donate').fadeIn()
+	.delay(2000)
+	.fadeOut();
+});
+
+
