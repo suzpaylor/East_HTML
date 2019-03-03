@@ -113,7 +113,7 @@ var APIKey = '3652279a5eab355d1ee816c495eefba2';
        // $(".city").html("<h1>" + response.name + " Weather Details</h1>");
         //$(".wind").text("Wind Speed: " + response.wind.speed);
         //$(".humidity").text("Humidity: " + response.main.humidity);
-        $("#currentWeather").text(Math.round(response.main.temp) + "F");
+        $("#currentWeather").html('Current Weather: '+ Math.round(response.main.temp) + '&deg' + 'F');
 		var src1 = 'http://openweathermap.org/img/w/' + response.weather[0].icon + '.png';
 		$('#little-icon').attr('src', src1);
         // Log the data in the console as well
