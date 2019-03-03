@@ -87,12 +87,12 @@ $('#please_show2').mouseover(function(){
 	.fadeOut();
 });
 
-
+var hats = '1234';
 //working on weather API
 //var APIKey = config.KEY;
 var APIKey = '3652279a5eab355d1ee816c495eefba2';
     // Here we are building the URL we need to query the database
-    var queryURL = "api.openweathermap.org/data/2.5/weather?lat=40.751580&lon=-111.856550" + APIKey;
+    var queryURL = 'http://api.openweathermap.org/data/2.5/weather?APPID=3652279a5eab355d1ee816c495eefba2&zip=84102,us&units=imperial';
 
     // Here we run our AJAX call to the OpenWeatherMap API
     $.ajax({
@@ -112,7 +112,7 @@ var APIKey = '3652279a5eab355d1ee816c495eefba2';
        // $(".city").html("<h1>" + response.name + " Weather Details</h1>");
         //$(".wind").text("Wind Speed: " + response.wind.speed);
         //$(".humidity").text("Humidity: " + response.main.humidity);
-        //$(".temp").text("Temperature (F) " + response.main.temp);
+        $("#currentWeather").text("Current Weather " + Math.round(response.main.temp) + "F");
 
         // Log the data in the console as well
         console.log("Wind Speed: " + response.wind.speed);
