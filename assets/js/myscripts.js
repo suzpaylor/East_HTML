@@ -93,7 +93,7 @@ var test1 = '1234';
 //but this isn't working
 var APIKey = '3652279a5eab355d1ee816c495eefba2';
     // Here we are building the URL we need to query the database
-    var queryURL = 'https://api.openweathermap.org/data/2.5/weather?APPID=' + MY_KEY + '&zip=84102,us&units=imperial';
+    var queryURL = 'https://api.openweathermap.org/data/2.5/weather?APPID=3652279a5eab355d1ee816c495eefba2&zip=84102,us&units=imperial';
 
     // Here we run our AJAX call to the OpenWeatherMap API
     $.ajax({
