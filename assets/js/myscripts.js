@@ -91,6 +91,7 @@ var test1 = '1234';
 //working on weather API
 //var APIKey = config.KEY;
 //but this isn't working
+let MY_KEY;
 var APIKey = MY_KEY;
     // Here we are building the URL we need to query the database
     var queryURL = `https://api.openweathermap.org/data/2.5/weather?APPID=${APIKey}&zip=84102,us&units=imperial`;
