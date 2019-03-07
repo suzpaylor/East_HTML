@@ -3764,7 +3764,7 @@ a > .baby-icon:hover {
 
 
 
-@media only screen and (max-width: 593px) {
+@media only screen and (max-width: 767px) {
   .hide-me-mobile {
     display: none;
   }
@@ -3899,4 +3899,10 @@ justify-content: center;
 }
 .icon-weather-wrapper {
 
+}
+.flex-box-wrapper {
+	display: flex;
+	align-items: center;
+	justify-items:center;
+	flex-wrap: wrap;
 }
