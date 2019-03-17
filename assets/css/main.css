@@ -3927,16 +3927,17 @@ justify-content: center;
 		color: white;
 }
 
-/* Animation */
+/* Typewriter Animation */
 .anim-typewriter{
   animation: typewriter 4s steps(44) 2s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 15em;}
+  to{width: 10em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
+
