@@ -3934,10 +3934,9 @@ justify-content: center;
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 10em;}
+  to{width: 13em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
-

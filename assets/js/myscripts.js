@@ -56,8 +56,8 @@
 		dots[slideIndex-1].className += " active";
         }
 
-// collapsable div W3 Schools
-
+// collapsible div W3 Schools
+ 
 var coll = document.getElementsByClassName("my-collapsible");
 var i;
 
@@ -115,5 +115,3 @@ var APIKey = MY_KEY;
 		var src1 = 'http://openweathermap.org/img/w/' + response.weather[0].icon + '.png';
 		$('#little-icon').attr('src', src1);
       });
-//
-//DISCOBALL
