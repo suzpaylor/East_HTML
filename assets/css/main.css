@@ -3940,3 +3940,11 @@ justify-content: center;
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
+
+
+.hover {
+	transition: opacity 0.5s ease;
+}
+.hover-fade:hover {
+	opacity: .5;
+}
